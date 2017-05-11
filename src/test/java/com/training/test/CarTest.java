@@ -20,5 +20,7 @@ public class CarTest {
 		car.changeColor("Red");
 		
 		Assert.assertEquals(car.getColor(), "Red", "Incorrect changed color");
+		Assert.assertEquals(true, false);
+		Assert.assertEquals(1, 1.0);
 	}
 }
