@@ -40,6 +40,17 @@ public class AnimalDemo {
 		
 //		cat.name = "Dog";
 		cat.move();
+		
+		CanEat hungryAnimal = new Dog();
+		hungryAnimal.eat("Bone");
+		
+		feed(new Dog());
+		feed(new Shark());
+		feed(new Cat());
+	}
+	
+	public static void feed(CanEat someone) {
+		someone.eat("fish");
 	}
 	
 	public static Animal getAnimal() {
